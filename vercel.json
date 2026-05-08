@@ -1,8 +1,5 @@
 {
   "rewrites": [
-    {
-      "source": "/:path((?!.*\\.md$).*)",
-      "destination": "/index.html"
-    }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
