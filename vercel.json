@@ -1,6 +1,12 @@
 {
-  "cleanUrls": false,
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/(.*)\\.md",
+      "destination": "/$1.md"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
