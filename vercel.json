@@ -1,12 +1,5 @@
 {
   "rewrites": [
-    {
-      "source": "/(.*)\\.md",
-      "destination": "/$1.md"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
