@@ -14,19 +14,15 @@
 
   <script>
     window.$docsify = {
-      // 1. 基本信息配置
       name: '“海洋科学”课程笔记',
       repo: 'https://github.com/MUXIEREPU/Notes',
-      
-      // 2. 侧边栏与目录配置
-      loadSidebar: true, // 开启侧边栏（需根目录有 _sidebar.md）
-      subMaxLevel: 3,    // 侧边栏显示的标题深度
-      auto2top: true,    // 切换页面后自动回到顶部
-      
-      // 3. 路由与路径修正（解决 404/首页加载的关键）
-      homepage: 'README.md', // 明确首页文件
-      basePath: '/',         // 强制从根目录解析路径
-      notFoundPage: true,    // 开启 404 页面支持
+      loadSidebar: true,
+      subMaxLevel: 3,
+      auto2top: true,
+      // --- 修正这里 ---
+      homepage: 'README.md', // 确保前面没有斜杠
+      basePath: './',        // 改成当前路径，更稳健
+      notFoundPage: true,
 
       // 4. 插件配置：搜索功能
       search: {
